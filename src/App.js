@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import NumberButton from './components/NumberButton'
+import NumberButton from './components/NumberButton/NumberButton.js'
 
 class App extends Component {
 
@@ -16,13 +16,13 @@ class App extends Component {
       <div>
         <h1>Count: {this.state.count}</h1>
         <NumberButton
-          number={5} 
+          number={5}
           handleIncrementCount={this.handleIncrementCount} />
         <NumberButton
-          number={7} 
+          number={7}
           handleIncrementCount={this.handleIncrementCount} />
         <NumberButton
-          number={12} 
+          number={12}
           handleIncrementCount={this.handleIncrementCount} />
       </div>
     )
